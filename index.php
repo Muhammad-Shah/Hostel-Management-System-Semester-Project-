@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>HMS</title>
+    <title>Hostel</title>
     <!-- meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,14 +28,14 @@
 <body>
     <h1>Hostel Room Allocation System</h1>
     <div class=" w3l-login-form">
-        <h2>Hostel-Manager/Admin Login</h2>
-        <form action="includes/login-hm.inc.php" method="POST">
+        <h2>Student Login</h2>
+        <form action="includes/login.inc.php" method="POST">
 
             <div class=" w3l-form-group">
-                <label>Username:</label>
+                <label>Student Roll No:</label>
                 <div class="group">
                     <i class="fas fa-user"></i>
-                    <input type="text" class="form-control" name="username" placeholder="Username" required="required" />
+                    <input type="text" class="form-control" name="student_roll_no" placeholder="Roll No" required="required" />
                 </div>
             </div>
             <div class=" w3l-form-group">
@@ -51,11 +51,11 @@
             </div>-->
             <button type="submit" name="login-submit">Login</button>
         </form>
-          <p class=" w3l-register-p">Login as<a href="index.php" class="register"> Student</a></p>
-      <!--  <p class=" w3l-register-p">Don't have an account?<a href="signup.php" class="register"> Sign up</a></p>-->
+          <p class=" w3l-register-p">Login as<a href="login-hostel_manager.php" class="register"> Hostel-Manager/Admin</a></p>
+        <p class=" w3l-register-p">Don't have an account?<a href="signup.php" class="register"> Sign up</a></p>
     </div>
     <footer>
-        <p class="copyright-agileinfo"> &copy; 2024 DBMS Project. All Rights Reserved </p>
+        <p class="copyright-agileinfo"> &copy; 2024 DBMS Project. All Rights Reserved</p>
     </footer>
 
 </body>
