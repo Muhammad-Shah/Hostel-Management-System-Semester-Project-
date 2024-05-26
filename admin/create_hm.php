@@ -190,3 +190,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script type="text/javascript" src="../web_profile/js/smoothbox.jquery2.js"></script>
 </body>
 </html>
+eeee
