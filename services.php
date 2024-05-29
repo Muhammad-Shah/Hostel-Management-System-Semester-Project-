@@ -118,7 +118,7 @@
                         <div class="agile_text_box">
                             <i class="fas fa-bed" aria-hidden="true"></i>
                             <h3>Apply for Ahmad Khan Boys Hostle</h3>
-								<p>B Hostel</p>
+								<p>Boys Hostel - B</p>
                         </div>
                         <div class="mask">
                             <a href="application_form.php?id=B"><img src="web_home/images/s2.jpg" class="img-responsive" alt="" /></a>
