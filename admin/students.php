@@ -165,7 +165,7 @@ session_start();
 <h2 class="heading text-capitalize mb-sm-5 mb-4"> Students Details</h2>
 <?php
    //$hostel_id = $_SESSION['hostel_id'];
-   $query1 = "SELECT * FROM Student";
+   $query1 = "SELECT * FROM Student ORDER BY Hostel_id ASC";
    $result1 = mysqli_query($conn,$query1);
    //select the hostel name from hostel table
    //$query6 = "SELECT * FROM Hostel WHERE Hostel_id = '$hostel_id'";
