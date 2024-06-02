@@ -184,11 +184,9 @@ session_start();
    $result1 = mysqli_query($conn,$query1);
    //select the hostel name from hostel table
    $query6 = "SELECT * FROM Hostel WHERE Hostel_id = '$hostel_id'";
-   $result6 = mysqli_query($conn,$query6);
+   $result6 = mysqli_query($conn, $query6);
    $row6 = mysqli_fetch_assoc($result6);
    $hostel_name = $row6['Hostel_name'];
-
-
 ?>
 
   <table class="table table-hover">
@@ -220,7 +218,7 @@ session_start();
 <footer class="py-5">
 	<div class="container py-md-5">
 		<div class="footer-logo mb-5 text-center">
-			<a class="navbar-brand" href="http://www.nitc.ac.in/" target="_blank">UETM <span class="display"> SURATHKAL</span></a>
+			<a class="navbar-brand" href="http://www.nitc.ac.in/" target="_blank">UETM <span class="display">  </span></a>
 		</div>
 		<div class="footer-grid">
 			<div class="list-footer">
