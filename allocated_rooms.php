@@ -271,7 +271,7 @@ session_start();
 <footer class="py-5">
 	<div class="container py-md-5">
 		<div class="footer-logo mb-5 text-center">
-			<a class="navbar-brand" href="http://www.uetmardan.edu.pk/" target="_blank">UETM <span class="display"> SURATHKAL</span></a>
+			<a class="navbar-brand" href="http://www.uetmardan.edu.pk/" target="_blank">UETM <span class="display">  </span></a>
 		</div>
 		<div class="footer-grid">
 			<div class="list-footer">
