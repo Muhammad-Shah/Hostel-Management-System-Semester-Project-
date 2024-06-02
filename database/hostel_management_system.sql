@@ -43,7 +43,7 @@ CREATE TABLE `Application` (
 -- Dumping data for table `Application`
 --
 
-LOCK TABLES `Application` WRITE;
+-- LOCK TABLES `Application` WRITE;
 /*!40000 ALTER TABLE `Application` DISABLE KEYS */;
 INSERT INTO `Application` VALUES (1,'21MDSWE177',1, 1, 100,''),
                                   (2,'21MDSWE164', 2, 1 , 200,''),
@@ -89,7 +89,7 @@ UNLOCK TABLES;
 -- Table structure for table `Hostel`
 --
 
-DROP TABLE IF EXISTS `Hostel`;
+-- DROP TABLE IF EXISTS `Hostel`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Hostel` (
@@ -106,9 +106,9 @@ CREATE TABLE `Hostel` (
 -- Dumping data for table `Hostel`
 --
 
-LOCK TABLES `Hostel` WRITE;
+-- LOCK TABLES `Hostel` WRITE;
 /*!40000 ALTER TABLE `Hostel` DISABLE KEYS */;
-INSERT INTO `Hostel` VALUES (1,'Abdali Boys Hostel',3,5,3),(2,'Ahmad Khan Boys Hostel',0,5,0),(3,'Ayesha Girls Hostel',1,5,1);
+INSERT INTO `Hostel` VALUES (1,'A',100,100,0), (2,'B',100,100,0), (3,'C',100,100,0);
 /*!40000 ALTER TABLE `Hostel` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -142,12 +142,12 @@ CREATE TABLE `Hostel_Manager` (
 -- Dumping data for table `Hostel_Manager`
 --
 
-LOCK TABLES `Hostel_Manager` WRITE;
+-- LOCK TABLES `Hostel_Manager` WRITE;
 /*!40000 ALTER TABLE `Hostel_Manager` DISABLE KEYS */;
 INSERT INTO `Hostel_Manager` VALUES (1,'mainadmin','Admin','UETM','987654321',1, 1,'admin',1),
-                                    (2,'hostelA','Hostel','A','987654321',1,1,'1234',0),
-                                    (3,'hostelB','Hostel','B','987654321',2,2,'1234',0),
-                                    (4,'hostelC','Hostel','C','987654321',3,3,'1234',0);
+                                    (2,'hostelA','Hostel','A','987654321',1,1,'12345',0),
+                                    (3,'hostelB','Hostel','B','987654321',2,2,'12345',0),
+                                    (4,'hostelC','Hostel','C','987654321',3,3,'12345',0);
 /*!40000 ALTER TABLE `Hostel_Manager` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -155,7 +155,7 @@ UNLOCK TABLES;
 -- Temporary table structure for view `Hostel_Manager_Profile`
 --
 
-DROP TABLE IF EXISTS `Hostel_Manager_Profile`;
+-- DROP TABLE IF EXISTS `Hostel_Manager_Profile`;
 /*!50001 DROP VIEW IF EXISTS `Hostel_Manager_Profile`*/;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
@@ -192,9 +192,11 @@ CREATE TABLE `Mess` (
 -- Dumping data for table `Mess`
 --
 
-LOCK TABLES `Mess` WRITE;
+-- LOCK TABLES `Mess` WRITE;
 /*!40000 ALTER TABLE `Mess` DISABLE KEYS */;
-INSERT INTO `Mess` VALUES (1,'A','Veg',2,5),(2,'B','Veg',3,5),(3,'C','Veg',5,5),(4,'D','Non-veg',4,5),(5,'E','Non-veg',4,5),(6,'F','Non-veg',4,5);
+INSERT INTO `Mess` VALUES (1,'A','Veg',300,300),
+                          (2,'B','Veg',300,300),
+                          (3,'C','Veg',300,300);
 /*!40000 ALTER TABLE `Mess` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -220,11 +222,11 @@ CREATE TABLE `Mess_Allocation` (
 -- Dumping data for table `Mess_Allocation`
 --
 
-LOCK TABLES `Mess_Allocation` WRITE;
+-- LOCK TABLES `Mess_Allocation` WRITE;
 /*!40000 ALTER TABLE `Mess_Allocation` DISABLE KEYS */;
-INSERT INTO `Mess_Allocation` VALUES (1, 1, 1, 1),
-                                      (2, 2, 2, 1),
-                                      (3, 3, 3, 1);
+-- INSERT INTO `Mess_Allocation` VALUES (1, 1, 1, 1),
+--                                       (2, 2, 2, 1),
+--                                       (3, 3, 3, 1);
 /*!40000 ALTER TABLE `Mess_Allocation` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -273,7 +275,7 @@ CREATE TABLE `Payment` (
 -- Dumping data for table `Payment`
 --
 
-LOCK TABLES `Payment` WRITE;
+-- LOCK TABLES `Payment` WRITE;
 /*!40000 ALTER TABLE `Payment` DISABLE KEYS */;
 INSERT INTO `Payment` VALUES ('21MDSWE177',1,21200),
                               ('21MDSWE164',1,21200),
@@ -371,9 +373,9 @@ CREATE TABLE `Student` (
 
 LOCK TABLES `Student` WRITE;
 /*!40000 ALTER TABLE `Student` DISABLE KEYS */;
-INSERT INTO `Student` VALUES ('21MDSWE177','Muhammad','Shah','03193618967','CSE','3','21mdswe177',1,100,1,1),
-                              ('21MDSWE164','Muhammad','Hashim','0317143067','CS','3','21mdswe164',2,200,2,2),
-                              ('21MDSWE147','Umama','Habib','03335057439','CSE','3','21mdswe147',3,300,3,3);
+INSERT INTO `Student` VALUES ('21MDSWE177','Muhammad','Shah','03193618967','CSE','3','123456',1,100,1,1),
+                              ('21MDSWE164','Muhammad','Hashim','0317143067','CS','3','123456',2,200,2,2),
+                              ('21MDSWE147','Umama','Habib','03335057439','CSE','3','123456',3,300,3,3);
 /*!40000 ALTER TABLE `Student` ENABLE KEYS */;
 UNLOCK TABLES;
 
