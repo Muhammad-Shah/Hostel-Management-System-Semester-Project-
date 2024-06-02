@@ -43,11 +43,9 @@ CREATE TABLE `Application` (
 -- Dumping data for table `Application`
 --
 
--- LOCK TABLES `Application` WRITE;
+LOCK TABLES `Application` WRITE;
 /*!40000 ALTER TABLE `Application` DISABLE KEYS */;
-INSERT INTO `Application` VALUES (1,'21MDSWE177',1, 1, 100,''),
-                                  (2,'21MDSWE164', 2, 1 , 200,''),
-                                  (3,'21MDSWE147', 3, 1 , 300,'');
+INSERT INTO `Application` VALUES (4,'181IT129',3,0,1,''),(5,'181IT130',4,0,1,''),(6,'181IT131',5,0,1,''),(7,'181IT132',6,0,1,''),(8,'181IT206',1,0,2,''),(10,'181IT207',1,0,3,''),(16,'181IT127',1,0,1,'');
 /*!40000 ALTER TABLE `Application` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -79,9 +77,7 @@ CREATE TABLE `Application_mess` (
 
 LOCK TABLES `Application_mess` WRITE;
 /*!40000 ALTER TABLE `Application_mess` DISABLE KEYS */;
-INSERT INTO `Application_mess` VALUES (1,'21MDSWE177',1,0,1,''),
-                                      (2,'21MDSWE164',2,0,2,''),
-                                      (3,'21MDSWE147',3,0,3,'');
+INSERT INTO `Application_mess` VALUES (2,'181IT127',1,0,1,''),(3,'181IT128',2,0,1,''),(4,'181IT129',3,0,1,''),(5,'181IT130',4,0,1,''),(6,'181IT131',5,0,1,''),(7,'181IT132',6,0,1,''),(8,'181IT206',1,0,2,''),(9,'181IT133',2,0,2,'I prefer this mess'),(10,'181IT207',1,0,3,'');
 /*!40000 ALTER TABLE `Application_mess` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -89,7 +85,7 @@ UNLOCK TABLES;
 -- Table structure for table `Hostel`
 --
 
--- DROP TABLE IF EXISTS `Hostel`;
+DROP TABLE IF EXISTS `Hostel`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Hostel` (
@@ -106,9 +102,9 @@ CREATE TABLE `Hostel` (
 -- Dumping data for table `Hostel`
 --
 
--- LOCK TABLES `Hostel` WRITE;
+LOCK TABLES `Hostel` WRITE;
 /*!40000 ALTER TABLE `Hostel` DISABLE KEYS */;
-INSERT INTO `Hostel` VALUES (1,'A',100,100,0), (2,'B',100,100,0), (3,'C',100,100,0);
+INSERT INTO `Hostel` VALUES (1,'A',3,5,3),(2,'B',0,5,0),(3,'C',1,5,1),(4,'D',1,5,1),(5,'E',1,5,1),(6,'F',1,5,1);
 /*!40000 ALTER TABLE `Hostel` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -142,12 +138,9 @@ CREATE TABLE `Hostel_Manager` (
 -- Dumping data for table `Hostel_Manager`
 --
 
--- LOCK TABLES `Hostel_Manager` WRITE;
+LOCK TABLES `Hostel_Manager` WRITE;
 /*!40000 ALTER TABLE `Hostel_Manager` DISABLE KEYS */;
-INSERT INTO `Hostel_Manager` VALUES (1,'mainadmin','Admin','UETM','987654321',1, 1,'admin',1),
-                                    (2,'hostelA','Hostel','A','987654321',1,1,'12345',0),
-                                    (3,'hostelB','Hostel','B','987654321',2,2,'12345',0),
-                                    (4,'hostelC','Hostel','C','987654321',3,3,'12345',0);
+INSERT INTO `Hostel_Manager` VALUES (1,'mainadmin','Admin','NITK','987654321',1,1,'trial',1),(2,'hostelA','Hostel','A','987654321',1,1,'$2y$10$QImNrErR0Bj5Ns9Gm/CKbulEPWNj9YBpihk6JWg4Ipx.pcEev6gHq',0),(3,'hostelB','Hostel','B','987654321',2,2,'$2y$10$Xdfrgvx5EvVWMzfzwIyTb./igun.DZMp5XxBXWnME5s0IjtGgovDu',0),(4,'hostelC','Hostel','C','987654321',3,3,'$2y$10$7gpP8Q.krVUgulRBgxNOVejLPZN5PEEIoQr9xijdgDzeu9jvcpu5G',0),(5,'hostelD','Hostel','D','987654321',4,4,'$2y$10$inWxU5AcKQ8fLeufr6dYaeeLuvnhlh.N67XzqM4rZtg.xOsDWcBHu',0),(6,'hostelE','Hostel','E','987654321',5,5,'$2y$10$SpCXnzzahlCPOIVl2Eh1fePaUPtrpdAkvtrUXzF7W0xyusZS7nx/q',0),(7,'hostelF','Hostel','F','987654321',6,6,'$2y$10$8b849FWoiZkfa5uRK52jYulD0llS6hOdkw7Srh0TQJO/JoVQvmLSi',0);
 /*!40000 ALTER TABLE `Hostel_Manager` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -155,7 +148,7 @@ UNLOCK TABLES;
 -- Temporary table structure for view `Hostel_Manager_Profile`
 --
 
--- DROP TABLE IF EXISTS `Hostel_Manager_Profile`;
+DROP TABLE IF EXISTS `Hostel_Manager_Profile`;
 /*!50001 DROP VIEW IF EXISTS `Hostel_Manager_Profile`*/;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
@@ -192,11 +185,9 @@ CREATE TABLE `Mess` (
 -- Dumping data for table `Mess`
 --
 
--- LOCK TABLES `Mess` WRITE;
+LOCK TABLES `Mess` WRITE;
 /*!40000 ALTER TABLE `Mess` DISABLE KEYS */;
-INSERT INTO `Mess` VALUES (1,'A','Veg',300,300),
-                          (2,'B','Veg',300,300),
-                          (3,'C','Veg',300,300);
+INSERT INTO `Mess` VALUES (1,'A','Veg',2,5),(2,'B','Veg',3,5),(3,'C','Veg',5,5),(4,'D','Non-veg',4,5),(5,'E','Non-veg',4,5),(6,'F','Non-veg',4,5);
 /*!40000 ALTER TABLE `Mess` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -222,11 +213,9 @@ CREATE TABLE `Mess_Allocation` (
 -- Dumping data for table `Mess_Allocation`
 --
 
--- LOCK TABLES `Mess_Allocation` WRITE;
+LOCK TABLES `Mess_Allocation` WRITE;
 /*!40000 ALTER TABLE `Mess_Allocation` DISABLE KEYS */;
--- INSERT INTO `Mess_Allocation` VALUES (1, 1, 1, 1),
---                                       (2, 2, 2, 1),
---                                       (3, 3, 3, 1);
+INSERT INTO `Mess_Allocation` VALUES (1,1,1,1),(2,1,2,1),(3,1,3,1),(4,1,4,0),(5,1,5,0),(6,2,1,1),(7,2,2,1),(8,2,3,0),(9,2,4,0),(10,2,5,0),(11,3,1,0),(12,3,2,0),(13,3,3,0),(14,3,4,0),(15,3,5,0),(16,4,1,1),(17,4,2,0),(18,4,3,0),(19,4,4,0),(20,4,5,0),(21,5,1,1),(22,5,2,0),(23,5,3,0),(24,5,4,0),(25,5,5,0),(26,6,1,1),(27,6,2,0),(28,6,3,0),(29,6,4,0),(30,6,5,0);
 /*!40000 ALTER TABLE `Mess_Allocation` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -265,7 +254,7 @@ DROP TABLE IF EXISTS `Payment`;
 CREATE TABLE `Payment` (
   `Student_id` varchar(255) NOT NULL,
   `Status` tinyint(1) DEFAULT '0',
-  `Amount` int(10) DEFAULT '21200',
+  `Amount` int(10) DEFAULT '75000',
   KEY `Student_id` (`Student_id`),
   CONSTRAINT `payment_ibfk_1` FOREIGN KEY (`Student_id`) REFERENCES `Student` (`Student_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -275,11 +264,9 @@ CREATE TABLE `Payment` (
 -- Dumping data for table `Payment`
 --
 
--- LOCK TABLES `Payment` WRITE;
+LOCK TABLES `Payment` WRITE;
 /*!40000 ALTER TABLE `Payment` DISABLE KEYS */;
-INSERT INTO `Payment` VALUES ('21MDSWE177',1,21200),
-                              ('21MDSWE164',1,21200),
-                              ('21MDSWE147',1,21200);
+INSERT INTO `Payment` VALUES ('181IT127',1,75000),('181IT128',1,75000),('181IT129',1,75000),('181IT130',1,75000),('181IT131',1,75000),('181IT132',1,75000),('181IT206',1,75000),('181IT133',1,75000),('181IT207',1,75000),('181IT208',1,75000);
 /*!40000 ALTER TABLE `Payment` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -307,9 +294,7 @@ CREATE TABLE `Room` (
 
 LOCK TABLES `Room` WRITE;
 /*!40000 ALTER TABLE `Room` DISABLE KEYS */;
-INSERT INTO `Room` VALUES (100,1,100,1),
-                          (200,2,200,1),
-                          (300,3,300,1);
+INSERT INTO `Room` VALUES (1,1,1,1),(2,1,2,1),(3,1,3,1),(4,1,4,0),(5,1,5,0),(6,2,1,0),(7,2,2,0),(8,2,3,0),(9,2,4,0),(10,2,5,0),(11,3,1,1),(12,3,2,0),(13,3,3,0),(14,3,4,0),(15,3,5,0),(16,4,1,1),(17,4,2,0),(18,4,3,0),(19,4,4,0),(20,4,5,0),(21,5,1,1),(22,5,2,0),(23,5,3,0),(24,5,4,0),(25,5,5,0),(26,6,1,1),(27,6,2,0),(28,6,3,0),(29,6,4,0),(30,6,5,0);
 /*!40000 ALTER TABLE `Room` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -373,9 +358,7 @@ CREATE TABLE `Student` (
 
 LOCK TABLES `Student` WRITE;
 /*!40000 ALTER TABLE `Student` DISABLE KEYS */;
-INSERT INTO `Student` VALUES ('21MDSWE177','Muhammad','Shah','03193618967','CSE','3','123456',1,100,1,1),
-                              ('21MDSWE164','Muhammad','Hashim','0317143067','CS','3','123456',2,200,2,2),
-                              ('21MDSWE147','Umama','Habib','03335057439','CSE','3','123456',3,300,3,3);
+INSERT INTO `Student` VALUES ('181IT127','Meghna','Kashyap','9880921333','IT','2','$2y$10$ZCjLQHt.LgDyaUfrIfa2AObpPYXTYwxQ59FcHoM66K7J1PETUiiL.',1,1,1,1),('181IT128','Mansi','Saxena','9880921333','IT','2','$2y$10$AO9Ffk4G..fkX1LvEChZDewF5Gh/D6iAQIY0TZHWsa2vzzdFhkBLW',NULL,NULL,2,1),('181IT129','Mohit','M','9880921333','IT','4','$2y$10$hcUD0a5lNyEdx.TOhh1KpemwBhKrRs6tKHT.EcbeMqSDLQzRXcwjS',3,1,NULL,NULL),('181IT130','Nivedhya','Girish','9880921333','IT','1','$2y$10$soAPlxnvKXAY7FJzFM7NPeaMk74RYU71iGrgyCvnFL3zho9Sc/POW',4,1,4,1),('181IT131','Janavi','N','9880921333','ECE','2','$2y$10$59WQd4lgBJOXQ4pCrmKDeePCCdrEAi1eg8Rz.3saKuTBrTAdWuD5K',5,1,5,1),('181IT132','Jiffy','Patrick','9880921333','Civil','3','$2y$10$xxYP7aOEe.SVkgO0VPXhie8g8UzJDi5sspRunPD3VxlogPJ0zfd.G',6,1,6,1),('181IT133','Fidha','P','9880921333','EEE','2','$2y$10$JbdyCLiYQn7.8UhXyqEkTeP0Kb5Lqh6X75CRXYFdEvmGW6aHrkmJW',NULL,NULL,2,2),('181IT206','Aniruddh','Sujish','9880921333','ECE','3','$2y$10$LLmQJb7moIL2AAETKZ.cUe7Cwxfj/31Lt1GVktlfbAI72qBqxxKCu',1,2,1,2),('181IT207','Darini','Raman','9880921333','CS','4','$2y$10$Lsjw2Qesdb/YEH0u9y/tNe8DOH64Ievuh8hyivY9BdWY6LieXEBAG',1,3,1,3),('181IT208','Rea','Jacob','9880921333','Mechanical','4','$2y$10$3ayzQhemDWUQTR5osk.SPOoZNppa2vte.p2brk86aSTC0t9DWaXKq',NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `Student` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -483,4 +466,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-05-20 15:04:56
+-- Dump completed on 2020-06-07 15:04:56
