@@ -187,7 +187,7 @@ session_start();
     <tbody>
     <?php
       if(mysqli_num_rows($result1)==0){
-         echo '<tr><td colspan="4">No Rows Returned</td></tr>';
+         echo '<tr><td colspan="4">No Rows Returned (NO STUDENTS)</td></tr>';
       }
       else{
       	while($row1 = mysqli_fetch_assoc($result1)){
