@@ -41,10 +41,10 @@ if (isset($_POST['hm_signup_submit'])) {
       else {
 
           $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
-          $sql = "SELECT *FROM Hostel WHERE Hostel_name = '$hostel_name'";
+          $sql = "SELECT * FROM Hostel WHERE Hostel_name = '$hostel_name'";
           $result = mysqli_query($conn, $sql);
           if($row = mysqli_fetch_assoc($result)){
-            $HostelID = $row[Hostel_id];
+            $HostelID = $row['Hostel_id'];
             $zz = 0;
             $sql = "INSERT INTO Hostel_Manager (Username, Fname, Lname, Mob_no, Hostel_id, Mess_id, Pwd, Isadmin) VALUES ('$username', '$fname', '$lname', '$mobile', '$HostelID', '$HostelID', '$hashedPwd', '$zz')";
           $result = mysqli_query($conn, $sql);
