@@ -53,7 +53,7 @@
 		<div class="container agile-banner_nav">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-				<h1><a class="navbar-brand" href="home.php">UET MARDAN<span class="display"></span></a></h1>
+				<h1><a class="navbar-brand" href="home.php">UETM<span class="display"></span></a></h1>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
@@ -226,7 +226,7 @@
 				containerHoverID: 'toTopHover', // fading element hover id
 				scrollSpeed: 1200,
 				easingType: 'linear'
-				};
+			};
 			*/
 
 			$().UItoTop({ easingType: 'easeOutQuart' });
