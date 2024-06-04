@@ -52,7 +52,7 @@ session_start();
 	<div class="container agile-banner_nav">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-			<h1><a class="navbar-brand" href="home_manager.php">UET MARDAN <span class="display"></span></a></h1>
+			<h1><a class="navbar-brand" href="home_manager.php">UETM <span class="display"></span></a></h1>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>
@@ -127,7 +127,7 @@ session_start();
 									<circle id="cd-circle-1" cx="110" cy="400" r="1364"/>
 								</clipPath>
 							</defs>
-							<image height='800px' width="1400px" clip-path="url(#cd-image-1)" xlink:href="web_home/images/1.png"></image>
+							<image height='800px' width="1400px" clip-path="url(#cd-image-1)" xlink:href="web_home/images/1.jpg"></image>
 						</svg>
 					</div> <!-- .svg-wrapper -->
 					<div class="cd-radial-slider-content">
@@ -172,7 +172,7 @@ session_start();
 									<circle id="cd-circle-3" cx="110" cy="400" r="60"/>
 								</clipPath>
 							</defs>
-							<image height='800px' width="1400px" clip-path="url(#cd-image-3)" xlink:href="web_home/images/3.png"></image>
+							<image height='800px' width="1400px" clip-path="url(#cd-image-3)" xlink:href="web_home/images/4.jpg"></image>
 						</svg>
 					</div> <!-- .svg-wrapper -->
 					<div class="cd-radial-slider-content text-center">
