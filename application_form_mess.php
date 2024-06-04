@@ -247,7 +247,7 @@ session_start();
       	    $row2 = mysqli_fetch_assoc($result2);
       	    $mess_id = $row2['Mess_id'];
 
-            $query3 = "INSERT INTO Application_mess (Student_id,Mess_id,Application_status,Message) VALUES ('$roll','$mess_id',true,'$message')";
+            $query3 = "INSERT INTO Application_mess (Student_id,Mess_id, Application_status, Mess_card_No, Message) VALUES ('$roll','$mess_id',true, '$roll', '$message')";
             $result3 = mysqli_query($conn,$query3);
 
             if($result3){
