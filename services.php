@@ -53,7 +53,7 @@
 		<div class="container agile-banner_nav">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-				<h1><a class="navbar-brand" href="home.php">UET MARDAN<span class="display"></span></a></h1>
+				<h1><a class="navbar-brand" href="home.php">UETM<span class="display"></span></a></h1>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
@@ -109,7 +109,7 @@
 								<p>Boys Hostel - A</p>
                         </div>
                         <div class="mask">
-                            <a href="application_form.php?id=A"><img src="web_home/images/s1.jpg" class="img-responsive" alt="" /></a>
+                            <a href="application_form.php?id=Abdali Boys Hostel"><img src="web_home/images/s1.jpg" class="img-responsive" alt="" /></a>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
 								<p>Boys Hostel - B</p>
                         </div>
                         <div class="mask">
-                            <a href="application_form.php?id=B"><img src="web_home/images/s2.jpg" class="img-responsive" alt="" /></a>
+                            <a href="application_form.php?id=Ahmad Khan Boys Hostel"><img src="web_home/images/s2.jpg" class="img-responsive" alt="" /></a>
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                             <p>Girls Hostel</p>
                         </div>
                         <div class="mask">
-                            <a href="application_form.php?id=B"><img src="web_home/images/s3.jpg" class="img-responsive" alt="" /></a>
+                            <a href="application_form.php?id=Ayesha Girls Hostel"><img src="web_home/images/s3.jpg" class="img-responsive" alt="" /></a>
                         </div>
                     </div>
                 </div>
